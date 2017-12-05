@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PhoneListComponent } from './phone-list/phone-list.component';
 import { PhoneDetailsComponent } from './phone-details/phone-details.component';
 import {PhoneService} from './phone.service';
+import { FileSelectDirective } from "ng2-file-upload";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,10 @@ import {PhoneService} from './phone.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FileSelectDirective
+
+
   ],
   providers: [PhoneService],
   bootstrap: [AppComponent]
